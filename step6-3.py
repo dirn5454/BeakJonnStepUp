@@ -1,8 +1,13 @@
+def hansu(n):
+    hansu = 0
+    for i in range(1, n+1):
+        if i < 100:
+            hansu += 1
+        else:
+            num = list(map(int, str(i)))
+            if num[0]-num[1] == num[1]-num[2]:
+                hansu += 1
+    return hansu
 n = int(input())
-a=[]
-def func(n):
-    if n < 10:
-        print(n)
-    elif 9 < n < 100:
-        print(n)
-    elif 1
+print(hansu(n))
+
