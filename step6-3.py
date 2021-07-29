@@ -10,4 +10,3 @@ def hansu(n):
     return hansu
 n = int(input())
 print(hansu(n))
-
